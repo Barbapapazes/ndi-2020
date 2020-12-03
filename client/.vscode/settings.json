@@ -3,5 +3,6 @@
   "i18n-ally.keystyle": "nested",
   "i18n-ally.sortKeys": true,
 
-  "vetur.experimental.templateInterpolationService": true
+  "vetur.experimental.templateInterpolationService": true,
+  "git.ignoreLimitWarning": true
 }
