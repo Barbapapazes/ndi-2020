@@ -4,7 +4,7 @@ import { messages } from '../messages'
 
 export default (app: App) => {
   const i18n = createI18n({
-    locale: 'en',
+    locale: 'fr',
     messages,
   })
 

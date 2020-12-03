@@ -4,7 +4,7 @@
       <Icon class="iconify inline-block" icon="carbon:campsite" />
     </p>
     <p>
-      <a href="https://github.com/antfu/vitesse" target="_blank"> Vitesse </a>
+      <a href="https://github.com/antfu/vitesse" target="_blank"> Vitessz </a>
     </p>
     <p class="text-sm opacity-50">
       <em>{{ t('intro.desc') }}</em>
