@@ -1,5 +1,5 @@
 <template>
-  <div class="text-xl mt-6 flex justify-center">
+  <div class="text-xl mt-6 flex justify-center pb-2">
     <router-link class="icon-btn mx-2" to="/">
       <Icon icon="carbon:sailboat-offshore" class="inline-block" />
     </router-link>

@@ -1,8 +1,11 @@
 <template>
   <header
-    class="bg-blue-400 h-10 text-white flex justify-center items-center text-xl capitalize"
+    class="bg-blue-400 h-16 text-white flex justify-center items-center text-xl capitalize font-bold"
   >
-    <div>{{ t('header.title') }}</div>
+    <span
+      ><img src="/favicon.png" alt="logo de l'application" class="h-12"
+    /></span>
+    Wave Report | {{ t('header.title') }}
   </header>
 </template>
 

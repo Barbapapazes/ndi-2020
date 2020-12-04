@@ -13,6 +13,12 @@
     "password": "password"
   },
   "about": {
-    "description": "Ceci est la page de Kernel Panic pour la nuit de l'info 2020 !\nKernel Panic, c'est une équipe de 3a et 4a de l'INSA Centre Val de Loire !"
+    "description": "Ceci est la page de Kernel Panic pour la nuit de l'info 2020 !\nKernel Panic, c'est une équipe de 3a et 4a de l'INSA Centre Val de Loire !",
+    "video": "Présentation de Wave Report 👀"
+  },
+  "index": {
+    "weather": "La météo du jour ! 🌊",
+    "weather_click": "Cliquez où vous le souhaitez pour y voir la météo ! 👇",
+    "map": "Consulter la carte des déchets et des plages polluées ! 🌍"
   }
 }

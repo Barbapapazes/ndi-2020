@@ -1,6 +1,8 @@
 dependencies:
   '@iconify/iconify': 2.0.0-rc.2
+  '@vue-leaflet/vue-leaflet': 0.5.0_leaflet@1.7.1+vue@3.0.4
   '@vueuse/core': 4.0.0-rc.5_vue@3.0.4
+  leaflet: 1.7.1
   nprogress: 0.2.0
   vue: 3.0.4
   vue-i18n: 9.0.0-beta.8_vue@3.0.4
@@ -1726,6 +1728,17 @@ packages:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     resolution:
       integrity: sha512-sV45zfdRqQo1A97pOSx3fsjR+3blmwtdCt8LDrXgCX36v4Vmz4KHrhpV6Fo2cRdXmyumxx11AHw0pNJqCNpDyg==
+  /@vue-leaflet/vue-leaflet/0.5.0_leaflet@1.7.1+vue@3.0.4:
+    dependencies:
+      leaflet: 1.7.1
+      vue: 3.0.4
+    dev: false
+    peerDependencies:
+      '@types/leaflet': ^1.5.7
+      leaflet: ^1.6.0
+      vue: ^3.0.0
+    resolution:
+      integrity: sha512-cgrNBRyQKB4Ea7ykiDpawIjLj/k88tWm4e78w4SsveNwkbckdoVS+IpmCxqlG1FZ5IScLQeTp8J528sDR3Kk2A==
   /@vue/compiler-core/3.0.0-rc.10:
     dependencies:
       '@babel/parser': 7.11.5
@@ -4590,6 +4603,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-weT+r0kTkRQdCdYCNtkMwWXQTMEswKrFBkm4ckQOMVhhqhIMI1UT2hMj+1iigIhgSZm5gTmrRXBNoGUgaTY1xA==
+  /leaflet/1.7.1:
+    dev: false
+    resolution:
+      integrity: sha512-/xwPEBidtg69Q3HlqPdU3DnrXQOvQU/CCHA1tcDQVzOwm91YMYaILjNp7L4Eaw5Z4sOYdbBz6koWyibppd8Zqw==
   /levn/0.4.1:
     dependencies:
       prelude-ls: 1.2.1
@@ -7297,6 +7314,7 @@ specifiers:
   '@purge-icons/generated': ^0.4.1
   '@types/nprogress': ^0.2.0
   '@typescript-eslint/eslint-plugin': ^4.9.0
+  '@vue-leaflet/vue-leaflet': ^0.5.0
   '@vue/compiler-sfc': ^3.0.4
   '@vuedx/typescript-plugin-vue': ^0.2.3
   '@vueuse/core': ^4.0.0-rc.5
@@ -7305,6 +7323,7 @@ specifiers:
   cross-env: ^7.0.3
   eslint: ^7.14.0
   esno: ^0.3.0
+  leaflet: ^1.7.1
   nprogress: ^0.2.0
   postcss-nested: ^5.0.1
   presite: ^2.0.1

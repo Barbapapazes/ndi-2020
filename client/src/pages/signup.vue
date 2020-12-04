@@ -54,9 +54,9 @@ const handleSubmit = function (e) {
   submitted.value = true
   console.log(password)
   fetch('http://localhost:4000/auth/register', {
+    mode: 'no-cors',
     headers: {
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
     },
     method: 'post',
     body: {

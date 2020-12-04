@@ -13,14 +13,12 @@ const alias = {
 const config: UserConfig = {
   alias,
   plugins: [
-
     // https://github.com/vamplate/vite-plugin-voie
     Voie({
       // load index page sync and bundled with the landing page to improve first loading time.
       // feel free to remove if you don't need it
       importMode(path: string) {
-        if (path === '/src/pages/index.vue')
-          return 'sync'
+        if (path === '/src/pages/index.vue') return 'sync'
         return 'async'
       },
       extensions: ['vue', 'md'],
@@ -48,8 +46,8 @@ const config: UserConfig = {
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Wave Report',
+        short_name: 'Wave Report',
         icons: [
           {
             src: '/pwa-192x192.png',
