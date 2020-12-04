@@ -31,7 +31,6 @@ coverage
 # Bower dependency directory (https://bower.io/)
 bower_components
 node_modules
-dist
 .presite
 # node-waf configuration
 .lock-wscript
@@ -85,7 +84,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/
