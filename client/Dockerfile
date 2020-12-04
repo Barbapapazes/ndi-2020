@@ -8,8 +8,6 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm i -g pnpm
-RUN pnpm i
-RUN pnpm build
 
 COPY . .
 
