@@ -7,10 +7,11 @@ WORKDIR /usr/src/app
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
 
-RUN npm ci --only=production
+RUN npm i -g pnpm
+RUN pnpm i
+RUN pnpm build
 
 COPY . .
 
-RUN npm i -g pnpm
 
-CMD ["pnpm", "build"]
+CMD ["http-server-pwa", "./dist"]
