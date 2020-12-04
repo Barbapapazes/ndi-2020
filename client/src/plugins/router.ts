@@ -5,14 +5,18 @@ import routes from 'voie-pages'
 // progress bar
 import NProgress from 'nprogress'
 
-export default (app: App) => {
-  const router = createRouter({
-    history: createWebHistory(),
-    routes,
-  })
+export const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
 
-  router.beforeEach(() => { NProgress.start() })
-  router.afterEach(() => { NProgress.done() })
+export default (app: App) => {
+  router.beforeEach(() => {
+    NProgress.start()
+  })
+  router.afterEach(() => {
+    NProgress.done()
+  })
 
   app.use(router)
 }

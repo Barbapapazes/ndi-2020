@@ -1,7 +1,7 @@
 <template>
-  <div class="text-xl mt-6">
+  <div class="text-xl mt-6 flex justify-center">
     <router-link class="icon-btn mx-2" to="/">
-      <Icon icon="carbon:campsite" class="inline-block" />
+      <Icon icon="carbon:sailboat-offshore" class="inline-block" />
     </router-link>
 
     <div class="icon-btn mx-2" @click="isDark = !isDark">
@@ -19,13 +19,13 @@
       <Icon icon="carbon:dicom-overlay" class="inline-block" />
     </router-link>
 
-    <a
-      class="icon-btn mx-2"
-      href="https://github.com/antfu/vitesse"
-      target="_blank"
-    >
-      <Icon icon="carbon:logo-github" class="inline-block" />
-    </a>
+    <router-link class="icon-btn mx-2" to="/signup">
+      <Icon icon="carbon:user-follow" class="inline-block" />
+    </router-link>
+
+    <router-link class="icon-btn mx-2" to="/login">
+      <Icon icon="carbon:login" class="inline-block" />
+    </router-link>
   </div>
 </template>
 

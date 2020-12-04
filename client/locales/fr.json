@@ -1,13 +1,18 @@
 {
-  "button": {
-    "back": "Retour",
-    "go": "Essayer"
+  "header": {
+    "title": "kernel panic"
   },
-  "intro": {
-    "desc": "Example d'application Vite",
-    "dynamic-route": "Démo de route dynamique",
-    "hi": "Salut, {name} !",
-    "whats-your-name": "Comment t'appelles-tu ?"
+  "signup": {
+    "button": "signup",
+    "username": "username",
+    "password": "password"
   },
-  "not-found": "Page non trouvée"
+  "login": {
+    "button": "login",
+    "username": "username",
+    "password": "password"
+  },
+  "about": {
+    "description": "Ceci est la page de Kernel Panic pour la nuit de l'info 2020 !\nKernel Panic, c'est une équipe de 3a et 4a de l'INSA Centre Val de Loire !"
+  }
 }
