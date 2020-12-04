@@ -38,7 +38,7 @@ exports.login = (req, res, next) => {
             token: jwt.sign(
               { userId: user._id },
               process.env.SECRET,
-              { expiresIn: '1h' }
+              { expiresIn: '5h' }
             )  
           });
         })
@@ -109,12 +109,12 @@ exports.pass_changed = (req, res, next) => {
               user.password = hash;
               user.save()
               .then((usy) => {res.render('../views/pass_changed', {ok: true, front: frontUrl});})
-              .catch(error => res.json(500).json({error}));
+              .catch(error => res.status(500).json({error}));
             })
-            .catch(error => res.json(500).json({error}))
+            .catch(error => res.status(500).json({error}))
           }
         })
-        .catch(error => res.json(500).json({error: "Utilisateur non reconnu"}));
+        .catch(error => res.status(500).json({error: "Utilisateur non reconnu"}));
       }
     })
   } else {

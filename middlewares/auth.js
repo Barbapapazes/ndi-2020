@@ -3,9 +3,9 @@ const jwt = require('jsonwebtoken');
 module.exports = (req, res, next) => {
     try {
         const auth = req.headers.authorization;
-        const bearer = auth.split(' ');
+        const bearer = auth.split(' ')[1];
         console.log('bearer', bearer)
-        jwt.verify(bearer, 'SECRET_TOKEN', function (error, decoded) {
+        jwt.verify(bearer, process.env.SECRET, function (error, decoded) {
             if(error) {
                 return res.status(401).json({
                     error: "Invalid request"
@@ -15,11 +15,11 @@ module.exports = (req, res, next) => {
             if (req.body.userId && req.body.userId !== userId) {
                 throw 'Invalid user ID';
             } else {
+                console.log('authenticated')
                 next(decoded.userId);
             }
         });   
     } catch {
-        console.log('catch')
         res.status(401).json({
             error: new Error('Invalid request')
         })

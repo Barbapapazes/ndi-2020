@@ -1,26 +1,24 @@
 const mongoose = require('mongoose');
-// const uniqueValidator = require('mongoose-unique-validator');
-
-// var SchemaTypes = mongoose.Schema.Types;
 
 const sessionSchema = mongoose.Schema(
     {
         frequentation: {
-            baigneurs: { type: Number, required: true},
-            travailleurs_nautiques: { type: Number, required: true},
+            baigneurs: { type: Number, required: true, default: 0},
+            travailleurs_nautiques: { type: Number, required: true, default: 0},
             bateaux: { 
-                peche: {type: Number, required: true},
-                loisir: {type: Number, required: true},
-                voile: {type: Number, required: true}
+                peche: {type: Number, required: true, default: 0},
+                loisir: {type: Number, required: true, default: 0},
+                voile: {type: Number, required: true, default: 0}
             }
         },
-        date_debut: { type: Date, required: true, default: Date.now},
-        date_fin: { type: Date, required: true, default: Date.now},
+        date: { type: Date, required: true, default: Date.now},
+        heure_debut: { type: String, required: true, default: new Date().getHours()+':'+new Date().getMinutes()},
+        heure_fin: { type: String, required: true, default: new Date().getHours()+':'+new Date().getMinutes()},
         produits_utilises: {type: Array},
+        spot: {type: mongoose.SchemaTypes.ObjectId, ref: 'Session'},
         declarations: [
             {type: mongoose.SchemaTypes.ObjectId, ref: 'Declaration'}
-        ],
-        spot: {type: mongoose.SchemaTypes.ObjectId, ref: 'Declaration'}
+        ]
     },
     { timestamps: { createdAt: 'created_at' }}
 );
