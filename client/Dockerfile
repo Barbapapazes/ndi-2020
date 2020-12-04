@@ -11,5 +11,5 @@ RUN npm i -g http-server-pwa
 
 COPY . .
 
-
+EXPOSE 8080
 CMD ["http-server-pwa", "./dist"]
